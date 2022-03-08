@@ -99,6 +99,7 @@ group :development do
   gem "spring"
   gem "byebug"
   gem "letter_opener"
+  gem 'meta_request', git: 'git@gitee.com:rails-train-camp02/meta_request.git'
 end
 
 group :development, :test do
