@@ -100,6 +100,7 @@ group :development do
   gem "byebug"
   gem "letter_opener"
   gem 'meta_request', git: 'git@gitee.com:rails-train-camp02/meta_request.git'
+  gem 'annotate'
 end
 
 group :development, :test do

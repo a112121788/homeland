@@ -81,6 +81,9 @@ GEM
     aliyun-sdk (0.8.0)
       nokogiri (~> 1.6)
       rest-client (~> 2.0)
+    annotate (3.2.0)
+      activerecord (>= 3.2, < 8.0)
+      rake (>= 10.4, < 14.0)
     ast (2.4.2)
     auto-correct (1.0.0)
       nokogiri (>= 1.4)
@@ -474,6 +477,7 @@ PLATFORMS
 
 DEPENDENCIES
   action-store
+  annotate
   auto-correct
   bootsnap
   byebug

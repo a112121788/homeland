@@ -1,5 +1,17 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: team_users
+#
+#  id         :integer          not null, primary key
+#  team_id    :integer          not null
+#  user_id    :integer          not null
+#  role       :integer
+#  status     :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
 FactoryBot.define do
   factory :team_user do
     association :team

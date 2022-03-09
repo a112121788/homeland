@@ -1,5 +1,17 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: settings
+#
+#  id         :integer          not null, primary key
+#  var        :string           not null
+#  value      :text
+#  thing_id   :integer
+#  thing_type :string(30)
+#  created_at :datetime
+#  updated_at :datetime
+#
 # RailsSettings Model
 class Setting < RailsSettings::Base
   LEGECY_ENVS = {
@@ -115,7 +127,7 @@ class Setting < RailsSettings::Base
     field :ban_words_on_reply, default: [], type: :array, separator: /\n+/
     field :ban_words_in_body, default: [], type: :array, separator: /\n+/
     field :newbie_notices, default: ""
-    field :tips, default: [], type: :array, separator: /\n+/
+    field :tips, default: ["tip1", "tip2"], type: :array, separator: /\n+/
   end
 
   scope :uploader do

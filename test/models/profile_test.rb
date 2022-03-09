@@ -1,5 +1,15 @@
 # frozen_string_literal: true
 
+# == Schema Information
+#
+# Table name: profiles
+#
+#  id          :bigint           not null, primary key
+#  user_id     :integer          not null
+#  contacts    :jsonb            not null
+#  rewards     :jsonb            not null
+#  preferences :jsonb            not null
+#
 require "test_helper"
 
 class ProfileTest < ActiveSupport::TestCase
